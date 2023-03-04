@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/af8b0422a9.js" crossorigin="anonymous" ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <table align="center">
+      
+            <thead>
+                <tr> 
+                    <td><input type="text" id="input" placeholder="0" readonly></td>
+                        </tr> 
+                    <tr>
+                        <td><input type="text" id="answer"readonly></td>
+                    </tr>
+                    <br>
+             </thead>
+       
+        
+     
+            <tbody> 
+
+                <tr> 
+                    <td><input type="button" value="C" onclick="clearInput()" class="br"></td> 
+                    <td><input type="button" value="AC" class="br"></td> 
+                    <td><input type="button" value="%" onclick="getOperator('%')" class="br"></td> 
+                    <td>
+                        <button>
+                            <i class="fa-solid fa-delete-left" id="del" onclick="jnjel()"></i>
+                        </button>
+                    </td> 
+                </tr> 
+                <tr>          
+                    <td><input type="button" value="7" onclick="getNumber(7)" class="num"></td> 
+                    <td><input type="button" value="8"  onclick="getNumber(8)" class="num"></td> 
+                    <td><input type="button" value="9" onclick="getNumber(9)" class="num"></td> 
+                    <td><input type="button" value="/" onclick="getOperator('/')" class="op"></td> 
+                </tr> 
+            
+                <tr> 
+                    <td><input type="button" value="4" onclick="getNumber(4)" class="num"></td> 
+                    <td><input type="button" value="5"  onclick="getNumber(5)" class="num"></td> 
+                    <td><input type="button" value="6" onclick="getNumber(6)" class="num"></td> 
+                    <td><input type="button" value="x" onclick="getOperator('*')" class="op"></td> 
+                </tr> 
+            
+                <tr> 
+                    <td><input type="button" value="1" onclick="getNumber(1)" class="num"></td> 
+                    <td><input type="button" value="2"  onclick="getNumber(2)" class="num"></td> 
+                    <td><input type="button" value="3" onclick="getNumber(3)" class="num"></td> 
+                    <td><input type="button" value="-" onclick="getOperator('-')" class="op"></td> 
+                </tr> 
+            
+                <tr> 
+                    <td><input type="button" value="." onclick="getOperator('.')" class="num"></td> 
+                    <td><input type="button" value="0"  onclick="getNumber(0)" class="num"></td> 
+                    <td><input type="button" value="=" onclick="comparision('=')" class="op" id="op"></td> 
+                    <td><input type="button" value="+" onclick="getOperator('+')" class="op" id="op"></td> 
+                </tr> 
+            </tbody> 
+        
+</table>
+<script src="script.js "></script>
+</body>
+</html>
